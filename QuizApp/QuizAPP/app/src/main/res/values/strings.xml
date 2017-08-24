@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Quiz APP</string>
+    <string name="app_name">Manchester Unite Quiz </string>
+    <string name="ques_1">1. How many titles did Manchester United won? </string>
+    <string name="ques_2">2. Who is the highest scoring player for United? </string>
+    <string name="ques_3">3. Name our Stadium. </string>
+    <string name="ques_4">4. Who wears and wore number 9 jersey for our team? </string>
+
 </resources>

@@ -1,18 +1,242 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.wordpress.cv14site.quizapp.MainActivity">
+    android:fillViewport="true">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
 
+    <TextView
+        android:id="@+id/ques1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ques_1"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rightAns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:onClick="addScore"/>
+
+        <Button
+            android:id="@+id/wrongAns1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:onClick="addScore"/>
+
+        <Button
+            android:id="@+id/wrongAns2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="26"
+            android:onClick="addScore"/>
+
+        <Button
+            android:id="@+id/wrongAns3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27"
+            android:onClick="addScore"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ques_2"
+        android:textSize="16sp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGG">
+        <RadioButton android:id="@+id/radio_pirates1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rooney"
+            android:onClick="addScoreRB"/>
+        <RadioButton android:id="@+id/radio_pirates2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giggs"
+            android:onClick="addScoreRB"/>
+        <RadioButton android:id="@+id/radio_pirates3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ronaldo"
+            android:onClick="addScoreRB"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ques_3"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/stadium"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/ques_4"
+        android:textSize="16sp"/>
+    <CheckBox
+        android:id="@+id/zlatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zlatan"
+        android:onClick="onCheckboxClicked"/>
+    <CheckBox
+        android:id="@+id/rooney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rooney"
+        android:onClick="onCheckboxClicked"/>/>
+    <CheckBox
+        android:id="@+id/ronaldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ronaldo"
+        android:onClick="onCheckboxClicked"/>/>
+    <CheckBox
+        android:id="@+id/lukaku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lukaku"
+        android:onClick="onCheckboxClicked"/>/>
+    <TextView
+        android:id="@+id/ques11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ques_1"
+        android:textSize="16sp"/>
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rightAns1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:onClick="addScore"/>
+
+        <Button
+            android:id="@+id/wrongAns11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:onClick="addScore"/>
+
+        <Button
+            android:id="@+id/wrongAns21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="26"
+            android:onClick="addScore"/>
+
+        <Button
+            android:id="@+id/wrongAns31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27"
+            android:onClick="addScore"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ques_2"
+        android:textSize="16sp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGG1">
+        <RadioButton android:id="@+id/radio_pirates11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rooney"
+            android:onClick="addScoreRB"/>
+        <RadioButton android:id="@+id/radio_pirates21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giggs"
+            android:onClick="addScoreRB"/>
+        <RadioButton android:id="@+id/radio_pirates31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ronaldo"
+            android:onClick="addScoreRB"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ques_3"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/stadium1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ques_4"
+        android:textSize="16sp"/>
+    <CheckBox
+        android:id="@+id/zlatan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zlatan"
+        android:onClick="onCheckboxClicked"/>
+    <CheckBox
+        android:id="@+id/rooney1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rooney"
+        android:onClick="onCheckboxClicked"/>/>
+    <CheckBox
+        android:id="@+id/ronaldo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ronaldo"
+        android:onClick="onCheckboxClicked"/>/>
+    <CheckBox
+        android:id="@+id/lukaku1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lukaku"
+        android:onClick="onCheckboxClicked"/>/>
+    <TextView
+        android:id="@+id/scoreView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="25sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Submit"
+        android:onClick="submitMeth"/>
+
+</LinearLayout>
+</ScrollView>
